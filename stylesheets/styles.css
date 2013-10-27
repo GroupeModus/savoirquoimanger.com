@@ -9,7 +9,6 @@ by Matt Graham
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Quattrocento Sans';
   src: url("../fonts/quattrocentosans-bolditalic-webfont.eot");
@@ -17,7 +16,6 @@ by Matt Graham
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Quattrocento Sans';
   src: url("../fonts/quattrocentosans-italic-webfont.eot");
@@ -25,7 +23,6 @@ by Matt Graham
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Quattrocento Sans';
   src: url("../fonts/quattrocentosans-regular-webfont.eot");
@@ -33,7 +30,6 @@ by Matt Graham
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Copse';
   src: url("../fonts/copse-regular-webfont.eot");
@@ -41,8 +37,7 @@ by Matt Graham
   font-weight: normal;
   font-style: normal;
 }
-
-/* normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -528,7 +523,7 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
+h2, article h1 {
   font-size: 24px;
   color: #393939;
 }
@@ -584,10 +579,8 @@ blockquote {
 pre {
   padding: 8px 15px;
   background: #333333;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #c7c7c7;
   overflow: auto;
@@ -601,10 +594,8 @@ pre code {
   margin: 0px;
   padding: 0px;
   background: #333;
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -616,10 +607,8 @@ code {
   margin: 0 4px;
   padding: 2px 6px;
   background: #333;
-  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -668,8 +657,8 @@ header {
   width: 100%;
   text-align: center;
   background: url(../images/background.png) #4276b6;
-  -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   z-index: 99;
   -webkit-font-smoothing: antialiased;
@@ -701,15 +690,13 @@ header p {
   margin-right: -382px;
   position: fixed;
   top: 115px;
-  background: #ffcc00;
-  border: 1px solid #f0b500;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  background: #8A1E03;
+  border: 1px solid #801c03;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 0px 2px 2px 0px;
   -moz-border-radius: 0px 2px 2px 0px;
-  -ms-border-radius: 0px 2px 2px 0px;
-  -o-border-radius: 0px 2px 2px 0px;
+  -webkit-border-radius: 0px;
   border-radius: 0px 2px 2px 0px;
 }
 #banner .banner-inner {
@@ -719,81 +706,30 @@ header p {
   float: right;
   margin-right: 55px;
 }
-#banner .button {
-  border: 1px solid #dba500;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
-  background: -webkit-linear-gradient(#ffe788, #ffce38);
-  background: -moz-linear-gradient(#ffe788, #ffce38);
-  background: -o-linear-gradient(#ffe788, #ffce38);
-  background: linear-gradient(#ffe788, #ffce38);
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #FFE788;
-  margin-left: 5px;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  color: #333;
-  font-weight: bold;
+#banner #logo-modus {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: block;
+}
+#banner h3 {
+  line-height: 52px;
   display: inline-block;
-  text-align: center;
-}
-#banner .button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
-  background: -webkit-linear-gradient(#ffe788, #ffe788);
-  background: -moz-linear-gradient(#ffe788, #ffe788);
-  background: -o-linear-gradient(#ffe788, #ffe788);
-  background: linear-gradient(#ffe788, #ffe788);
-  background-color: #ffeca0;
-}
-#banner .fork {
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  background-color: #FFE788;
+  color: white;
   margin-left: 0;
 }
-#banner .downloads {
+#banner .right {
   float: right;
   margin: 0;
 }
-#banner .downloads span {
+#banner .right span {
   float: left;
   line-height: 52px;
   font-size: 90%;
-  color: #9d7f0d;
+  color: white;
   text-transform: uppercase;
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
-}
-#banner ul {
-  list-style: none;
-  height: 40px;
-  padding: 0;
-  float: left;
-  margin-left: 10px;
-}
-#banner ul li {
-  display: inline;
-}
-#banner ul li a.button {
-  background-color: #FFE788;
-}
-#banner #logo {
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  right: 7px;
-  top: 7px;
-  display: block;
-  background: url(../images/octocat-logo.png);
+  vertical-align: middle;
 }
 
 section {
@@ -803,15 +739,31 @@ section {
   margin-top: 190px;
   position: relative;
   background: #fbfbfb;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+}
+
+article {
+  margin: 0 0 40px;
+}
+
+.author {
+  margin-top: -10px;
+}
+
+.image-wrap img {
+  float: right;
+  margin: 0 0 20px 20px;
+  width: 220px;
+}
+
+.buy a {
+  font-weight: bold;
 }
 
 small {
@@ -837,7 +789,7 @@ nav ul li {
   line-height: 16px;
 }
 nav ul li.tag-h1 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 nav ul li.tag-h1 a {
   font-weight: bold;
@@ -893,15 +845,15 @@ footer {
     margin: 0 auto;
     max-width: none;
   }
-  #banner .downloads {
+  #banner .right {
     margin-right: 20px;
   }
-  #banner .fork {
+  #banner h3 {
     left: 50%;
     position: relative;
     margin-left: -325px;
   }
-  #banner #logo {
+  #banner #logo-modus {
     margin-right: 5px;
     float: right;
     position: relative;
@@ -948,12 +900,15 @@ footer {
   #banner {
     top: 80px;
   }
-  #banner .fork {
+  #banner h3 {
     float: left;
     display: inline-block;
     margin-left: 0px;
     position: fixed;
     left: 20px;
+  }
+  #banner .right span {
+    visibility: hidden;
   }
 
   section {
@@ -964,6 +919,16 @@ footer {
 
   header ul, header p.view {
     position: static;
+  }
+}
+@media print, screen and (max-width: 580px) {
+  .image-wrap {
+    text-align: center;
+  }
+  .image-wrap img {
+    float: none;
+    width: 100%;
+    margin: 0;
   }
 }
 @media print, screen and (max-width: 480px) {

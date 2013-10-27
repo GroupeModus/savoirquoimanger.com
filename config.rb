@@ -2,9 +2,9 @@
 
 # Set this to the root of your project when deployed:
 http_path = ""
-css_dir = ""
-sass_dir = "/"
-images_dir = "../images"
+css_dir = "/stylesheets"
+sass_dir = "/src/sass/"
+images_dir = "images"
 javascripts_dir = "javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -23,4 +23,4 @@ javascripts_dir = "javascripts"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-line_comments = false # by Compass.app 
+line_comments = false # by Compass.app
