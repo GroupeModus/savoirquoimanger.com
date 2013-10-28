@@ -748,6 +748,22 @@ section {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
 }
 
+#savoir-quoi-manger {
+  display: inline-block;
+  width: 14.7%;
+}
+
+.books-thumbnails a {
+  display: inline-block;
+  width: 20%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+.books-thumbnails a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
 article {
   margin: 0 0 40px;
 }
@@ -950,8 +966,16 @@ footer {
     margin-top: 5px;
   }
 
-  #banner {
+  div.wrapper {
+    margin-top: -16px;
+  }
+
+  #savoir-quoi-manger {
     display: none;
+  }
+
+  .books-thumbnails a {
+    width: 49%;
   }
 
   header ul {
