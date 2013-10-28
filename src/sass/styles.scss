@@ -62,7 +62,7 @@ by Matt Graham
 @import "compass/css3";
 
 body {
-  font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#666;
   font-weight:300;
   margin: 0px;
@@ -356,6 +356,7 @@ footer {
   bottom:20px;
   text-align: right;
   line-height: 16px;
+  font-size: 14px;
 }
 
 @media print, screen and (max-width: 1060px) {
