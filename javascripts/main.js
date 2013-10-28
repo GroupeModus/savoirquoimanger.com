@@ -21,7 +21,6 @@ $(document).ready(function(){
 
   $("nav ul li, .books-thumbnails").on("click", "a", function(event) {
     offset = ($('#savoir-quoi-manger').is(':visible') ? ($('header p').is(':visible') ? 160 : 120 ) : 20 )
-    console.log(offset)
     var position = $($(this).attr("href")).offset().top - offset;
     $("html, body").animate({scrollTop: position}, 400);
     $("nav ul li a").parent().removeClass("active");
