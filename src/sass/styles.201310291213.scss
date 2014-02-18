@@ -266,6 +266,8 @@ section {
 }
 
 .books-thumbnails {
+  text-align: right;
+  margin-left: -18px;
   a {
     display: inline-block;
     width: 20%;
@@ -408,6 +410,12 @@ footer {
 
 }
 
+@media print, screen and (max-width: 780px) {
+  .books-thumbnails {
+    margin-left: 0;
+  }
+}
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
@@ -480,8 +488,12 @@ footer {
     display: none;
   }
 
-  .books-thumbnails a {
-    width: 49%;
+  .books-thumbnails {
+    text-align: left;
+
+    a {
+      width: 49%;
+    }
   }
 
   header ul {
