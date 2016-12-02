@@ -304,7 +304,7 @@ small {
 nav {
   width: 230px;
   position: fixed;
-  top: 200px;
+  top: 170px;
   left:50%;
   margin-left:-580px;
   text-align: right;
@@ -509,8 +509,7 @@ footer {
   }
 }
 
-@media print, screen and (max-height: 680px) {
-
+@media print, screen and (max-height: 760px) {
   footer {
     text-align: center;
     margin: 20px auto;
@@ -518,6 +517,9 @@ footer {
     left:auto;
     bottom:auto;
     width:auto;
+  }
+  #logo-modus-vivendi {
+    float: none;
   }
 }
 
